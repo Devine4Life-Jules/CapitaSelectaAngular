@@ -10,6 +10,9 @@ import { HeaderComponent } from './components/header/header.component';
     <app-header />
     <app-home />
   `,
+  styles: [
+    "src/reset.css"
+  ]
 
 
 

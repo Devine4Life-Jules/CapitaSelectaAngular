@@ -1,0 +1,13 @@
+ul {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  list-style: none;
+
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+  color: black;
+}
+
