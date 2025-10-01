@@ -5,6 +5,7 @@ Jules Desmet his log when learning angular
 ## 24/09 first starting project
 Getting started getting familiar with installing angular, fist time using cli, creating first components, importing them etc, today preferred just reading docs over the tutorial on their website
 
+see this first project in Experiments/1_first_time_installing in this repo
 ## 1/10 starting with the tutorial
 
 -  https://angular.dev/tutorials/learn-angular/1-components-in-angular
