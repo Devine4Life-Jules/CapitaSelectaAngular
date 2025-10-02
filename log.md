@@ -13,3 +13,12 @@ see this first project in Experiments/1_first_time_installing in this repo
 -  https://angular.dev/tutorials/learn-angular/3-composing-components
 -  https://angular.dev/tutorials/learn-angular/4-control-flow-if
 -  https://angular.dev/tutorials/learn-angular/5-control-flow-for
+
+
+## 2/10
+
+- https://angular.dev/tutorials/learn-angular/6-property-binding
+- https://angular.dev/tutorials/learn-angular/7-event-handling
+- https://angular.dev/tutorials/learn-angular/8-input
+- https://angular.dev/tutorials/learn-angular/9-output
+- https://angular.dev/tutorials/learn-angular/10-deferrable-views
