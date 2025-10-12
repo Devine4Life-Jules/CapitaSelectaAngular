@@ -22,3 +22,16 @@ see this first project in Experiments/1_first_time_installing in this repo
 - https://angular.dev/tutorials/learn-angular/8-input
 - https://angular.dev/tutorials/learn-angular/9-output
 - https://angular.dev/tutorials/learn-angular/10-deferrable-views
+
+## 12/10
+- https://angular.dev/tutorials/learn-angular/11-optimizing-images
+- https://angular.dev/tutorials/learn-angular/12-enable-routing
+- https://angular.dev/tutorials/learn-angular/13-define-a-route
+- https://angular.dev/tutorials/learn-angular/14-routerLink
+- https://angular.dev/tutorials/learn-angular/15-forms
+- https://angular.dev/tutorials/learn-angular/16-form-control-values
+- https://angular.dev/tutorials/learn-angular/17-reactive-forms
+- https://angular.dev/tutorials/learn-angular/18-forms-validation
+
+
+
