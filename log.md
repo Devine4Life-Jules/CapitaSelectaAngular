@@ -32,6 +32,12 @@ see this first project in Experiments/1_first_time_installing in this repo
 - https://angular.dev/tutorials/learn-angular/16-form-control-values
 - https://angular.dev/tutorials/learn-angular/17-reactive-forms
 - https://angular.dev/tutorials/learn-angular/18-forms-validation
+- https://angular.dev/tutorials/learn-angular/19-creating-an-injectable-service
+-https://angular.dev/tutorials/learn-angular/20-inject-based-di
+- https://angular.dev/tutorials/learn-angular/22-pipes
+- https://angular.dev/tutorials/learn-angular/24-create-a-pipe
+
+tutorial completed! first milestone reached 
 
 
 
