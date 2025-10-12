@@ -15,7 +15,7 @@ see this first project in Experiments/1_first_time_installing in this repo
 -  https://angular.dev/tutorials/learn-angular/5-control-flow-for
 
 
-## 2/10
+## 2/10 Continue with tutorial
 
 - https://angular.dev/tutorials/learn-angular/6-property-binding
 - https://angular.dev/tutorials/learn-angular/7-event-handling
@@ -23,7 +23,7 @@ see this first project in Experiments/1_first_time_installing in this repo
 - https://angular.dev/tutorials/learn-angular/9-output
 - https://angular.dev/tutorials/learn-angular/10-deferrable-views
 
-## 12/10
+## 12/10 finishing up with tutorial
 - https://angular.dev/tutorials/learn-angular/11-optimizing-images
 - https://angular.dev/tutorials/learn-angular/12-enable-routing
 - https://angular.dev/tutorials/learn-angular/13-define-a-route
