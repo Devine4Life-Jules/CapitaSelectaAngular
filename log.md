@@ -39,5 +39,8 @@ see this first project in Experiments/1_first_time_installing in this repo
 
 tutorial completed! first milestone reached 
 
+## 13/10 applying the knowledge of portfolio in 
+
+
 
 
