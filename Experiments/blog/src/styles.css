@@ -52,3 +52,12 @@ a, a:visited {
   text-decoration: none;
   color: black;
 }
+
+
+/* end of reset */
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
