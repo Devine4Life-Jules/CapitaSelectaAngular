@@ -33,14 +33,40 @@ see this first project in Experiments/1_first_time_installing in this repo
 - https://angular.dev/tutorials/learn-angular/17-reactive-forms
 - https://angular.dev/tutorials/learn-angular/18-forms-validation
 - https://angular.dev/tutorials/learn-angular/19-creating-an-injectable-service
--https://angular.dev/tutorials/learn-angular/20-inject-based-di
+- https://angular.dev/tutorials/learn-angular/20-inject-based-di
 - https://angular.dev/tutorials/learn-angular/22-pipes
 - https://angular.dev/tutorials/learn-angular/24-create-a-pipe
 
 tutorial completed! first milestone reached 
 
-## 13/10 applying the knowledge of portfolio in 
+## 13/10 applying the knowledge of portfolio in a blog site
+
+- Dynamic Routing in Angular
+    - https://www.youtube.com/watch?v=nLxy0sqxhAc
 
 
+## 20/10
+- signals
+
+    - https://angular.dev/guide/signals
+    - https://www.youtube.com/watch?v=n1a2eQ0Zyls
+
+- RxJs
+    - https://v17.angular.io/guide/rx-library
+    - does not seem a priority right now since i could archieve a lot form this with signals like mentioned on consult
+
+- errors
+    - https://angular.dev/best-practices/error-handling
 
 
+- declarative templates and directives
+    - https://angular.dev/guide/directives#adding-and-removing-classes-with-ngclass
+    - https://www.youtube.com/watch?v=b687kMZDXTg
+    - https://www.youtube.com/watch?v=SK-xlWW4pOM
+
+### revisiting some fundamentels
+
+-  https://angular.dev/tutorials/learn-angular/4-control-flow-if
+-  https://angular.dev/tutorials/learn-angular/5-control-flow-for
+-  https://angular.dev/tutorials/learn-angular/6-property-binding
+- https://angular.dev/essentials/templates#setting-dynamic-properties-and-attributes

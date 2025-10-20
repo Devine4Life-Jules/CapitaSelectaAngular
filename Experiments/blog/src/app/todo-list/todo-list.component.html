@@ -1,0 +1,4 @@
+<ul>
+  <li *ngFor="let todo of todos"
+  [ngStyle]="{'background-color':todo.isCompleted ? 'green' : 'transparent'}">{{todo.text}} <input type="checkbox" (change)="toggleCompleted(todo)"></li>
+

@@ -2,3 +2,12 @@
   [title]="title"
   [description]="description">
 </app-page-description>
+<div class="posts">
+  <div *ngFor="let post of postService.posts()" class="post-card">
+    <h3>{{ post.title }}</h3>
+    <p> {{ post.content }}</p>
+    <a routerLink="['/posts', post.id]">Read More</a>
+
+  </div>
+
+</div>
