@@ -46,11 +46,17 @@ tutorial completed! first milestone reached
 
 
 ## 20/10
+
 - signals
 
     - https://angular.dev/guide/signals
     - https://www.youtube.com/watch?v=n1a2eQ0Zyls
     - https://angular.dev/guide/signals
+
+- 
+- DI
+    - https://angular.dev/guide/di/dependency-injection
+
 
 - RxJs
     - https://v17.angular.io/guide/rx-library
