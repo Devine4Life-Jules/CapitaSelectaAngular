@@ -50,6 +50,7 @@ tutorial completed! first milestone reached
 
     - https://angular.dev/guide/signals
     - https://www.youtube.com/watch?v=n1a2eQ0Zyls
+    - https://angular.dev/guide/signals
 
 - RxJs
     - https://v17.angular.io/guide/rx-library
@@ -64,9 +65,24 @@ tutorial completed! first milestone reached
     - https://www.youtube.com/watch?v=b687kMZDXTg
     - https://www.youtube.com/watch?v=SK-xlWW4pOM
 
+
+- angular vs React
+    - https://www.youtube.com/watch?v=4vqtq3DaKCw
+
+
+- https://www.youtube.com/watch?v=B0FVAoG5srQ
+
+- https://angular.dev/guide/animations
+
 ### revisiting some fundamentels
 
 -  https://angular.dev/tutorials/learn-angular/4-control-flow-if
 -  https://angular.dev/tutorials/learn-angular/5-control-flow-for
 -  https://angular.dev/tutorials/learn-angular/6-property-binding
 - https://angular.dev/essentials/templates#setting-dynamic-properties-and-attributes
+
+
+## 21 / 10
+- https://www.youtube.com/watch?v=oUmVFHlwZsI
+- https://www.youtube.com/watch?v=bKfbzpANUFE
+- https://angular.dev/guide/templates/two-way-binding

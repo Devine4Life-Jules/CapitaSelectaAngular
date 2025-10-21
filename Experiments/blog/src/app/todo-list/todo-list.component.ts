@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './todo-list.component.css'
 })
 export class TodoListComponent {
-  todos = [
+  todos = signal([
     { text: 'Components & Templates (binding, directives, pipes)', isCompleted: false },
     { text: 'Modules & Services (dependency injection)', isCompleted: false },
     { text: 'Routing & Navigation (guards, lazy loading)', isCompleted: false },
@@ -19,8 +19,10 @@ export class TodoListComponent {
     { text: 'Animations', isCompleted: false },
     { text: 'Testing', isCompleted: false },
     { text: 'Deployment', isCompleted: false },
-  ];
+  ]);
+
   toggleCompleted(todo: { text: string; isCompleted: boolean }) {
     todo.isCompleted = !todo.isCompleted;
+    this.todos.set([...this.todos()]);
   }
 }

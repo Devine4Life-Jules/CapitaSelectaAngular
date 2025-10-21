@@ -8,8 +8,16 @@ export class OrderService {
   // Using Angular signals for reactive state management
   private ordersSignal = signal<TableOrders>({
     table1: [{ name: 'Water', price: 2, quantity: 1 }],
+    table2: [],
+    table3: [],
+    table4: [],
+    table5: [],
     table6: [{ name: 'Hamburger', price: 19, quantity: 2 }],
+    barSpot1: [],
     barSpot2: [{ name: 'Coke', price: 2, quantity: 3 }],
+    barSpot3: [],
+    barSpot4: [],
+    barSpot5: [],
   });
 
   // Public readonly signal for components to read

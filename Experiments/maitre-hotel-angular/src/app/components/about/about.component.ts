@@ -37,7 +37,7 @@ import { Component } from '@angular/core';
 
         <div class="tech-stack">
           <h3>Built With:</h3>
-          <p>Angular 20 • TypeScript • RxJS • Zoneless</p>
+          <p>Angular 20 • TypeScript • Signals • Zoneless</p>
         </div>
       </div>
     </div>

@@ -1,0 +1,26 @@
+<div style="padding: 2rem; font-family: Arial, sans-serif;">
+  <h1>Two-Way Binding Demo (Parent ↔ Child)</h1>
+
+  <div style="background: #f0f0f0; padding: 1rem; margin: 1rem 0; border-radius: 8px;">
+    <h2>Child Component:</h2>
+    <!-- The [(searchText)] syntax creates TWO-WAY binding -->
+    <app-search-input [(searchText)]="parentSearchText" />
+  </div>
+
+  <div style="background: #e3f2fd; padding: 1rem; margin: 1rem 0; border-radius: 8px;">
+    <h2>Parent Component:</h2>
+    <p><strong>Parent sees:</strong> {{ parentSearchText() }}</p>
+    <button (click)="parentSearchText.set('Changed from parent!')">
+      Change from Parent
+    </button>
+  </div>
+
+  <div style="background: #fff3e0; padding: 1rem; margin: 1rem 0; border-radius: 8px;">
+    <h3>What's happening?</h3>
+    <ul>
+      <li>✅ Type in child input → parent sees it instantly</li>
+      <li>✅ Click button to change from parent → child input updates</li>
+      <li>🎯 This is TWO-WAY binding with <code>[(searchText)]</code></li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<div style="padding: 2rem; font-family: Arial, sans-serif;">
+  <h1>Computed Signals Demo</h1>
+
+  <div style="background: #f0f0f0; padding: 1rem; margin: 1rem 0; border-radius: 8px;">
+    <h2>Input Values:</h2>
+
+    <div style="margin-bottom: 1rem;">
+      <label>Length: </label>
+      <input
+        type="number"
+        [value]="length()"
+        (input)="length.set(+$any($event.target).value)"
+        style="width: 100px;"
+      />
+      <span> = {{ length() }}</span>
+    </div>
+
+    <div>
+      <label>Width: </label>
+      <input
+        type="number"
+        [value]="width()"
+        (input)="width.set(+$any($event.target).value)"
+        style="width: 100px;"
+      />
+      <span> = {{ width() }}</span>
+    </div>
+  </div>
+
+  <div style="background: #e3f2fd; padding: 1rem; margin: 1rem 0; border-radius: 8px;">
+    <h2>Computed Area:</h2>
+    <p style="font-size: 1.5rem;">
+      <strong>{{ length() }} × {{ width() }} = {{ area() }}</strong>
+    </p>
+  </div>
+
+
+</div>

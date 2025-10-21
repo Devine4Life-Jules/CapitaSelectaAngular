@@ -64,7 +64,9 @@ export class MapSvgComponent {
       rects: [
         { x: 822.6, y: 679.7, width: 196.5, height: 222 },
         { x: 698.6, y: 814.2, width: 89.4, height: 89.4 },
-        { x: 1054.1, y: 814.2, width: 89.4, height: 89.4 },
+        { x: 698.6, y: 677.9, width: 89.4, height: 89.4 },
+        { x: 1045.5, y: 814.2, width: 89.4, height: 89.4 },
+        { x: 1045.5, y: 677.9, width: 89.4, height: 89.4 },
       ]
     },
     {
@@ -77,6 +79,30 @@ export class MapSvgComponent {
         { x: 1319.9, y: 543.1, width: 89.4, height: 89.4 },
         { x: 1456.2, y: 543.1, width: 89.4, height: 89.4 },
         { x: 1592.5, y: 543.1, width: 89.4, height: 89.4 },
+      ]
+    },
+    {
+      id: 'table4',
+      rects: [
+        { x: 152.7, y: 82.5, width: 89.4, height: 89.4 },
+        { x: 152.7, y: 363.7, width: 89.4, height: 89.4 },
+        { x: 118.3, y: 186.3, width: 158.1, height: 158.1 },
+      ]
+    },
+    {
+      id: 'table5',
+      rects: [
+        { x: 376.8, y: 82.5, width: 89.4, height: 89.4 },
+        { x: 376.8, y: 363.7, width: 89.4, height: 89.4 },
+        { x: 342.5, y: 186.3, width: 158.1, height: 158.1 },
+      ]
+    },
+    {
+      id: 'table6',
+      rects: [
+        { x: 600.3, y: 82.5, width: 89.4, height: 89.4 },
+        { x: 600.3, y: 363.7, width: 89.4, height: 89.4 },
+        { x: 566, y: 186.3, width: 158.1, height: 158.1 },
       ]
     },
     {

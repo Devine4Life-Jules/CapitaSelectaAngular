@@ -1,26 +1,15 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { trigger, transition, style, animate } from '@angular/animations';
+import { AnimationCallbackEvent } from '@angular/core';
 import { OrderItem } from '../../models/product.model';
 
 @Component({
   selector: 'app-bill-modal',
   standalone: true,
   imports: [CommonModule],
-  animations: [
-    trigger('modalAnimation', [
-      transition(':enter', [
-        style({ opacity: 0, transform: 'scale(0.9)' }),
-        animate('200ms ease-out', style({ opacity: 1, transform: 'scale(1)' }))
-      ]),
-      transition(':leave', [
-        animate('150ms ease-in', style({ opacity: 0, transform: 'scale(0.9)' }))
-      ])
-    ])
-  ],
   template: `
     @if (isOpen) {
-      <div class="modal-overlay" (click)="onClose.emit()" @modalAnimation>
+      <div class="modal-overlay" (click)="onClose.emit()" (animate.leave)="handleLeave($event)">
         <div class="modal-content" (click)="$event.stopPropagation()">
           <div class="modal-header">
             <h2>Bill</h2>
@@ -79,6 +68,17 @@ import { OrderItem } from '../../models/product.model';
       align-items: center;
       justify-content: center;
       z-index: 1000;
+      opacity: 1;
+      transition: opacity 200ms ease-out;
+
+      @starting-style {
+        opacity: 0;
+      }
+    }
+
+    .modal-overlay.leaving {
+      opacity: 0;
+      transition: opacity 150ms ease-in;
     }
 
     .modal-content {
@@ -90,6 +90,17 @@ import { OrderItem } from '../../models/product.model';
       display: flex;
       flex-direction: column;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      transform: scale(1);
+      transition: transform 200ms ease-out;
+
+      @starting-style {
+        transform: scale(0.9);
+      }
+    }
+
+    .modal-overlay.leaving .modal-content {
+      transform: scale(0.9);
+      transition: transform 150ms ease-in;
     }
 
     .modal-header {
@@ -183,4 +194,14 @@ export class BillModalComponent {
   @Input() total = 0;
 
   @Output() onClose = new EventEmitter<void>();
+
+  handleLeave(event: AnimationCallbackEvent): void {
+    const element = event.target as HTMLElement;
+    element.classList.add('leaving');
+
+    // Wait for the animation to complete
+    setTimeout(() => {
+      event.animationComplete();
+    }, 150); // Match the transition duration
+  }
 }

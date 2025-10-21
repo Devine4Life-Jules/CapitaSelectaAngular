@@ -1,0 +1,8 @@
+<div>
+  <label>Search: </label>
+  <input
+    [value]="searchText()"
+    (input)="searchText.set($any($event.target).value)"
+    placeholder="Type something..."
+  />
+</div>
