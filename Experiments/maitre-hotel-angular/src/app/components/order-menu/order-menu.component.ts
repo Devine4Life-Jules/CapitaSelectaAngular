@@ -11,7 +11,6 @@ import { Product, OrderItem } from '../../models/product.model';
       <h2>Ordering for Table {{ selectedTable }}</h2>
 
       <div class="ordering-mode">
-        <!-- Product Selection -->
         <div class="product-list">
           <h3>Available Products</h3>
           <div class="products-grid">
@@ -24,7 +23,6 @@ import { Product, OrderItem } from '../../models/product.model';
           </div>
         </div>
 
-        <!-- Order List -->
         <div class="order-section">
           <div class="controls">
             <button (click)="onClose.emit()" class="btn-secondary">Close Ordering Mode</button>

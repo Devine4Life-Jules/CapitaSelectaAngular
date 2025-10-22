@@ -12,7 +12,6 @@ import { Reservation } from '../../models/reservation.model';
     <div class="reservations-page">
       <h2>Reservations</h2>
 
-      <!-- Angular Reactive Form -->
       <form [formGroup]="reservationForm" (ngSubmit)="onSubmit()" class="reservation-form">
         <div class="form-group">
           <label for="name">Name:</label>
@@ -61,7 +60,6 @@ import { Reservation } from '../../models/reservation.model';
         </button>
       </form>
 
-      <!-- Upcoming Reservations -->
       <div class="reservation-section">
         <h3>Upcoming Reservations</h3>
         @if (reservationService.upcomingReservations().length > 0) {
@@ -82,7 +80,6 @@ import { Reservation } from '../../models/reservation.model';
         }
       </div>
 
-      <!-- Late Reservations -->
       @if (reservationService.lateReservations().length > 0) {
         <div class="reservation-section late">
           <h3>Late Reservations</h3>
@@ -261,11 +258,9 @@ import { Reservation } from '../../models/reservation.model';
   `]
 })
 export class ReservationsComponent {
-  // Dependency Injection
   private fb = inject(FormBuilder);
   reservationService = inject(ReservationService);
 
-  // Angular Reactive Forms with validators
   reservationForm = this.fb.group({
     name: ['', [Validators.required, Validators.minLength(2)]],
     hour: ['', Validators.required],

@@ -199,9 +199,8 @@ export class BillModalComponent {
     const element = event.target as HTMLElement;
     element.classList.add('leaving');
 
-    // Wait for the animation to complete
     setTimeout(() => {
       event.animationComplete();
-    }, 150); // Match the transition duration
+    }, 150);
   }
 }

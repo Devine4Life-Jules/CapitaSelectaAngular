@@ -5,7 +5,6 @@ import { OrderItem, Product, TableOrders } from '../models/product.model';
   providedIn: 'root'
 })
 export class OrderService {
-  // Using Angular signals for reactive state management
   private ordersSignal = signal<TableOrders>({
     table1: [{ name: 'Water', price: 2, quantity: 1 }],
     table2: [],
@@ -20,10 +19,8 @@ export class OrderService {
     barSpot5: [],
   });
 
-  // Public readonly signal for components to read
   readonly orders = this.ordersSignal.asReadonly();
 
-  // Computed signal example - could calculate total orders count
   readonly totalOrdersCount = computed(() => {
     const allOrders = this.ordersSignal();
     return Object.values(allOrders).reduce((total, items) =>
@@ -41,7 +38,6 @@ export class OrderService {
       const existingItem = tableOrders.find(item => item.name === product.name);
 
       if (existingItem) {
-        // Increase quantity if product already exists
         return {
           ...orders,
           [tableId]: tableOrders.map(item =>
@@ -51,7 +47,6 @@ export class OrderService {
           )
         };
       } else {
-        // Add new product with quantity 1
         return {
           ...orders,
           [tableId]: [...tableOrders, { ...product, quantity: 1 }]

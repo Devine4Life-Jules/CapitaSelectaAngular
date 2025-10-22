@@ -48,7 +48,6 @@ import { Product } from '../../models/product.model';
   `]
 })
 export class FloorPlanComponent {
-  // Dependency Injection - Angular's core feature
   orderService = inject(OrderService);
 
   selectedTable: string | null = null;
